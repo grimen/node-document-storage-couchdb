@@ -8,6 +8,8 @@ var Storage = require('node-document-storage');
 module.exports = Storage.Spec('CouchDB', {
   module: require('..'),
   engine: require('cradle'),
+  id: 'couchdb',
+  protocol: 'http',
   db: 'default-test',
   default_url: 'http://localhost:5984/default-test',
   authorized_url: 'https://app9156953.heroku:X8763MJCEGurRpOpmGEYlbyk@app9156953.heroku.cloudant.com/test',
